@@ -4,7 +4,7 @@ import { Card } from "primereact/card";
 export const Home = () => {
   return (
     <div>
-      <h1 className="margin-b-30 title txtCenter">Welcome to React Ts Hell</h1>
+      <h1 className="margin-b-30 title txtCenter">React Tsx</h1>
       <div className="row">
         <div className="col-xs-12 col-md-4">
           <Card title="Title 1" className="margin-b-10">

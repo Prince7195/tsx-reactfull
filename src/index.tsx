@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Home } from "./components/Home";
+import "../custom.css";
 import "../styles.css";
 import { Layout } from "./Layout";
 import { Dashboard } from "./components/Dashboard";

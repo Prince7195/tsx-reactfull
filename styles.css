@@ -28,3 +28,7 @@ body {
 .margin-b-30 {
   margin-bottom: 30px;
 }
+
+.width-170 {
+  width: 170px !important;
+}
