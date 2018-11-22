@@ -73,8 +73,8 @@ export class Datasets extends React.Component<any, any> {
   }
 
   render() {
-    let dynamic1 = DatasetColumnOne.map(() => {
-      return <Column selectionMode="multiple" style={{ width: '3em' }} />;
+    let dynamic1 = DatasetColumnOne.map((col, i) => {
+      return <Column selectionMode="multiple" key={i} style={{ width: '3em' }} />;
     });
     let dynamic2 = DataSetColumns.map((col, i) => {
       return <Column key={col.field}

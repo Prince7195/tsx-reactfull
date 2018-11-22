@@ -32,3 +32,15 @@ body {
 .width-170 {
   width: 170px !important;
 }
+
+table.data-grid {
+  width: 75%;
+}
+
+.data-grid-container .data-grid .cell {
+  height: 50px !important;
+}
+
+.data-grid-container .data-grid .cell > input {
+  height: 50px !important;
+}
