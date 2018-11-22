@@ -1,2 +1,2 @@
 export * from "./Datasets/Datasets";
-export * from "./Dashboard/Dashboard";
+export * from "./DataSheet/DataSheet";

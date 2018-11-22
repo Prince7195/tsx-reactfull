@@ -2,10 +2,11 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Home } from "./components/Home";
+import "handsontable-pro/dist/handsontable.full.css";
 import "../custom.css";
 import "../styles.css";
 import { Layout } from "./Layout";
-import { Dashboard } from "./components/Dashboard";
+import { DataSheet } from "./components/DataSheet";
 import { Datasets } from "./components/Datasets";
 
 class BaseApp extends React.Component<any, any> {
@@ -18,7 +19,7 @@ class BaseApp extends React.Component<any, any> {
         <Layout>
           <Route exact={true} path="/" component={Home} />
           <Route exact={true} path="/datasets" component={Datasets} />
-          <Route exact={true} path="/dashboard" component={Dashboard} />
+          <Route exact={true} path="/dataSheet" component={DataSheet} />
         </Layout>
       </BrowserRouter>
     );

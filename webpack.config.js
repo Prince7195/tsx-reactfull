@@ -12,6 +12,9 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".json", ".css"]
   },
   watch: true,
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {

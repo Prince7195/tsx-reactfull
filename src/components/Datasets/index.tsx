@@ -37,7 +37,10 @@ export class Datasets extends React.Component<any, any> {
   }
 
   inputTextEditor(props: any, field: any) {
-    return <InputText type="text" value={props.rowData[field]} onChange={(e: any) => this.onEditorValueChange(props, e.target.value)} />;
+    return <InputText type="text"
+      value={props.rowData[field]}
+      onChange={(e: any) => this.onEditorValueChange(props, e.target.value)}
+    />;
   }
 
   colorEditor(props: any) {
@@ -47,8 +50,12 @@ export class Datasets extends React.Component<any, any> {
   brandEditor(props: any) {
 
     return (
-      <Dropdown value={props.value[props.rowIndex].brand} options={BrandList}
-        onChange={(e) => this.onEditorValueChange(props, e.value)} style={{ width: '100%' }} placeholder="Select brand" />
+      <Dropdown value={props.value[props.rowIndex].brand}
+        options={BrandList}
+        onChange={(e) => this.onEditorValueChange(props, e.value)}
+        style={{ width: '100%' }}
+        placeholder="Select brand"
+      />
     );
   }
 
@@ -70,14 +77,23 @@ export class Datasets extends React.Component<any, any> {
       return <Column selectionMode="multiple" style={{ width: '3em' }} />;
     });
     let dynamic2 = DataSetColumns.map((col, i) => {
-      return <Column key={col.field} field={col.field} editor={this.getEditor(col.field)} header={col.header} sortable={true} />;
+      return <Column key={col.field}
+        field={col.field}
+        editor={this.getEditor(col.field)}
+        header={col.header}
+      // sortable={true}
+      />;
     });
     let dynamicColumns = [...dynamic1, ...dynamic2];
 
     var header = <div>
       <div className="text-center">Dataset Name</div>
       <div className="text-right">
-        <InputText type="search" onInput={(e: any) => this.setState({ globalFilter: e.target.value })} placeholder="Search" size={50} />
+        <InputText type="search"
+          onInput={(e: any) => this.setState({ globalFilter: e.target.value })}
+          placeholder="Search"
+          size={50}
+        />
       </div>
     </div>;
 

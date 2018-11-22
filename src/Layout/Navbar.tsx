@@ -31,8 +31,8 @@ export const NavBar = () => {
             </Link>
           </li>
           <li className="nav-item active">
-            <Link className="nav-link" to="/dashboard">
-              Dashboard
+            <Link className="nav-link" to="/dataSheet">
+              DataSheet
             </Link>
           </li>
         </ul>
