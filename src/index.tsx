@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import 'react-datasheet/lib/react-datasheet.css';
-// import 'handsontable/dist/handsontable.full.css';
+import 'handsontable/dist/handsontable.full.css';
 import "../custom.css";
 import "../styles.css";
 import { Layout } from "./Layout";

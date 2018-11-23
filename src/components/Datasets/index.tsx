@@ -69,6 +69,8 @@ export class Datasets extends React.Component<any, any> {
         return this.brandEditor;
       case "color":
         return this.colorEditor;
+      default:
+        return this.vinEditor;
     }
   }
 

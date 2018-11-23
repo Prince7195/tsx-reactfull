@@ -1,15 +1,31 @@
 {
     "compilerOptions": {
         "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": false,
-        "module": "commonjs",
-        "target": "es2015",
-        "jsx": "react",
+        "target": "es5",
+        "module": "es6",
+        "moduleResolution": "node",
         "lib": [
             "dom",
-            "es5",
-            "es2015"
+            "es6"
+        ],
+        "alwaysStrict": true,
+        "disableSizeLimit": true,
+        "downlevelIteration": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": true,
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedLocals": true,
+        "pretty": true,
+        "strictNullChecks": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "jsx": "react",
+        "importHelpers": true,
+        "types": [
+            "node"
         ]
     },
     "include": [
