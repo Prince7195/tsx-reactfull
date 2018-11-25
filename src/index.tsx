@@ -17,7 +17,7 @@ class BaseApp extends React.Component<any, any> {
   }
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="tsx-reactfull">
         <Layout>
           <Route exact={true} path="/" component={Home} />
           <Route exact={true} path="/datasets" component={Datasets} />
@@ -30,7 +30,7 @@ class BaseApp extends React.Component<any, any> {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="tsx-reactfull">
     <BaseApp />
   </BrowserRouter>,
   document.getElementById("app")
